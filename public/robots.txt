@@ -1,0 +1,6 @@
+# Allow all crawlers. Update the Sitemap URL to your real domain.
+User-agent: *
+Allow: /
+
+# Replace with your real sitemap URL
+Sitemap: https://bhashithak.netlify.app/sitemap.xml
