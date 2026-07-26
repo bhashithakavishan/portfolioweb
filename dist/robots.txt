@@ -1,0 +1,6 @@
+# Allow all crawlers and point them to the new primary domain.
+User-agent: *
+Allow: /
+
+Host: bhashitha.me
+Sitemap: https://bhashitha.me/sitemap.xml

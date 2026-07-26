@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Outfit', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Page transition — fires every time the key changes in App.tsx */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-fade {
+  animation: pageFadeIn 0.35s ease-out both;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+.container-x {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Scrolling ribbon / marquee */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee { overflow: hidden; }
+.marquee .marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  will-change: transform;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee .marquee-group { display: inline-flex; }
+
+/* Wrapper to allow angled ribbon that stretches past viewport edges */
+.marquee-wrapper { overflow: visible; }
+
+/* Thicker ribbon visuals */
+.marquee { border-radius: 0; }
+.marquee .marquee-group span { letter-spacing: 0.6px; }
+.marquee .marquee-group .text-xl { line-height: 0.8; }
+
+
+
