@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 # Allow all crawlers and point them to the new primary domain.
 User-agent: *
 Allow: /
 
 Host: bhashitha.me
 Sitemap: https://bhashitha.me/sitemap.xml
+=======
+# Allow all crawlers. Update the Sitemap URL to your real domain.
+User-agent: *
+Allow: /
+
+# Replace with your real sitemap URL
+Sitemap: https://bhashithak.netlify.app/sitemap.xml
+>>>>>>> 37d8548a3016e1c2217d0b93a628f8bbbbb104cc
