@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const footerLinks = [
@@ -16,6 +16,7 @@ const socials = [
   { icon: <FaFacebookF />, href: 'https://www.facebook.com/bhashitha.kavishan', label: 'Facebook' },
   { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/bhashithadharmarathna/', label: 'LinkedIn' },
   { icon: <FaInstagram />, href: 'https://www.instagram.com/_kavish_b_/', label: 'Instagram' },
+  { icon: <FaGithub />, href: 'https://github.com/bhashithakavishan/', label: 'GitHub' },
   { icon: <FaWhatsapp />, href: 'https://wa.me/94761864224', label: 'WhatsApp' },
 ]
 
